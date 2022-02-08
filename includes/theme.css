@@ -1,0 +1,50 @@
+.form-errors{
+     color:red;
+}
+
+ .form-container{
+     border:2px solid green;
+     margin-top: 100px;
+     padding:40px 20%;
+     border-radius: 1%;
+     line-height: 2.0;
+     box-shadow: 10px 10px 5px #aaaaaa;
+}
+ .rows{
+     padding-top:20px;
+}
+ .btn-submit{
+     padding-right: 30px;
+     color:red;
+}
+ .db-icon{
+     height: 20px;
+     width: 20px;
+     margin:2px;
+     margin-right: 2px;
+}
+ table {
+     margin-top: 50px;
+     border-collapse: collapse;
+     border-spacing: 0;
+     width: 60%;
+     border: 2px solid #ddd;
+     border-radius: 10%;
+}
+ #btm{
+     margin-left: 300px;
+     margin-right: 300px;
+     margin-top: 50px;
+     margin-bottom: 200px;
+     border-collapse: collapse;
+     border-spacing: 0;
+     width: 60%;
+     border: 2px solid #ddd;
+     border-radius: 10%;
+}
+ th, td {
+     padding: 50px;
+}
+ tr:nth-child(even) {
+     background-color: #f2f2f2;
+}
