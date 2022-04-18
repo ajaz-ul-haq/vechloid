@@ -14,6 +14,7 @@ if(!$conn){
              username VARCHAR(50) NOT NULL,
              dob VARCHAR(50) NOT NULL,
              password VARCHAR(50) NOT NULL
+             type VARCHAR(50) NOT NULL
              )";
 
     if ($conn->query($sqlc) === TRUE) {

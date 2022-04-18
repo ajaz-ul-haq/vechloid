@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "vehicloid");
+$conn = mysqli_connect("localhost", "root", "", "vechloid");
 
 if(!$conn){
   die("ERROR: Could not connect to databse. "

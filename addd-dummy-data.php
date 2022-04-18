@@ -37,7 +37,7 @@ function randRow(){
 }
 
 
-for($i=0; $i<10; $i++){
+for($i=0; $i<500; $i++){
 
   $Brand = generateRandomString(10);
   $Type = generateRandomString(10);
