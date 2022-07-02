@@ -2,6 +2,8 @@
 
    include "includes/db_config.php";
 
+   $quantity = isset($_GET['quantity']) ? $_GET['quantity'] : 100;
+
 
 
    function generateRandomString($length) {
@@ -37,7 +39,7 @@ function randRow(){
 }
 
 
-for($i=0; $i<500; $i++){
+for($i=0; $i<$quantity; $i++){
 
   $Brand = generateRandomString(10);
   $Type = generateRandomString(10);
@@ -47,5 +49,7 @@ for($i=0; $i<500; $i++){
   $Price  = rand(15,40);
   newRow($Brand,$Name,$Model,$Type,$Milage,$Price);
 }
+
+echo "<br>All the migrations are Successful and Data have been seeded"
 
 ?>

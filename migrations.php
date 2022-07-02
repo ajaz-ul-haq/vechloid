@@ -17,9 +17,7 @@
              type VARCHAR(50) NOT NULL
              )";
 
-    if ($conn->query($queryToCreateCredentialsTable )) {
-        echo " Table creds created successfully <br>";
-
+    if ($conn->query($queryToCreateCredentialsTable)) {
         $queryToCreateVehiclesTable  = "CREATE TABLE vehicles(
              id INT(10) UNSIGNED PRIMARY KEY,
              Brand VARCHAR(255) NOT NULL,
@@ -30,7 +28,12 @@
              Price INT(5) NOT NULL
              )";
 
-        echo $conn->query($queryToCreateCredentialsTable)?: "Table Vehicles created successfully<br>" ;
+        if($conn->query($queryToCreateVehiclesTable)){
+            echo "Tables created successfully<br> ..... Seeding Tables Now ....";
+
+            require 'seeds.php';
+
+        }
 
     }
     else{
