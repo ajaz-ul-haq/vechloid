@@ -109,7 +109,7 @@
             </div>
             <div >
                <br>
-               <a href="login.php"><button type="button" name="Create Account" class="btn btn-info btn-lg">Alrady have an Account</button></a>
+               <a href="login.php"><button type="button" name="Create Account" class="btn btn-info btn-lg">Already have an Account</button></a>
             </div>
          </div>
       </div>
